@@ -72,7 +72,7 @@
 
   		<div id="tests" class="row-fluid">
   			<div class="span12">
-  				<h3>Tests</h3>
+  				<h3>Examples</h3>
   			</div>
   		</div>
   		<div class="row-fluid">
@@ -80,28 +80,26 @@
   				<h4>WebElements</h4>
   				<p>
   					<form class="form-search">
-  						<input type="text" class="input-medium search-query">
-  						<button type="submit" class="btn">Search</button>
+  						<input  id="query" name="searchInput" type="text" class="input-medium search-query">
+  						<button id="search" type="submit" class="btn">Search</button>
   					</form>
   				</p>
 
   				<h4>Extended WebElement</h4>
   				<p>
   					<div class="btn-group">
-  						<button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+  						<button id="menu" class="btn dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></button>
   						<ul class="dropdown-menu">
-  							<li><a href="#">Action</a></li>
-  							<li><a href="#">Another action</a></li>
-  							<li><a href="#">Something else here</a></li>
-  							<li class="divider"></li>
-  							<li><a href="#">Separated link</a></li>
+  							<li><a id="create" href="#">Create</a></li>
+  							<li><a id="update" href="#">Update</a></li>
+  							<li><a id="delete" href="#">Delete</a></li>
   						</ul>
   					</div>
   				</p>
 
   				<h4>List with WebElements</h4>
   				<p>
-  					<ul>
+  					<ul id="todo-list">
   						<li>Buy milk</li>
   						<li>Don't forgett Lisas birthday!</li>
   						<li>Remember to pay bills!</li>
@@ -110,7 +108,7 @@
 
   				<h4>List with Extended WebElements</h4>
   				<p>
-  					<table class="table">
+  					<table id="user-table" class="table">
   						<thead>
   							<tr>
   								<th>#</th>
